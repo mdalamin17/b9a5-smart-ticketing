@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,17 +10,137 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header>
-        
+    <header class="px-8 py-4">
+      <nav class="font-raleway navbar bg-base-100 flex justify-between">
+        <div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div>
+          <button class="btn text-[#1DD100] text-xl font-bold bg-[#1dd1001a]">
+            Bus
+            <img src="images/bus-icon.png" alt="" />
+          </button>
+        </div>
+      </nav>
+      <section>
+        <div class="relative">
+          <img class="w-[100%]" src="images/banner.png" alt="" />
+          <div class="absolute top-32 left-[349px] text-center">
+            <p class="lg:text-6xl text-4xl font-extrabold text-white">
+              End-to-End-Travel with
+            </p>
+            <p
+              class="lg:text-6xl text-4xl font-extrabold text-[#1DD100] pt-8 pb-5"
+            >
+              P Paribahan
+            </p>
+            <p class="pt-2 text-white pb-16">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] text-xl border-none">Buy Tickets</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex justify-around space-x-5 text-center font-inter">
+          <button class="btn border-b-[#1DD100] h-[80px] rounded-3xl">
+            <img src="images/people.png" alt="" />
+            <div class="flex-row">
+              <h2 class="font-bold text-[#03070B]">500k+</h2>
+              <p class="text-[#03071299] pt-2">Registered users</p>
+            </div>
+          </button>
+          <button class="btn border-b-[#1DD100] h-[80px] rounded-3xl">
+            <img src="images/ticket-cupon.png" alt="" />
+            <div class="flex-row">
+              <h2 class="font-bold text-[#03070B]">1.7 lacks</h2>
+              <p class="text-[#03071299] pt-2">Tickets sold</p>
+            </div>
+          </button>
+          <button class="btn border-b-[#1DD100] h-[80px] rounded-3xl">
+            <img src="images/stoppage.png" alt="" />
+            <div class="flex-row">
+              <h2 class="font-bold text-[#03070B]">80K+</h2>
+              <p class="text-[#03071299] pt-2">Rental partners</p>
+            </div>
+          </button>
+        </div>
+      </section>
+      <section>
+        <h1 class=" font-raleway font-bold text-4xl p-4 text-center">Best offers for you</h1>
+        <div class="flex justify-evenly gap-2">
+          <div class="flex bg-[#FFBF0F] w-1/2 rounded-3xl">
+            <div class="font-inter p-16">
+              <h3 class="font-black text-4xl text-[#030712cc]">15% OFF</h3>
+              <p class="font-semibold text-xl text-[#030712cc]">on your next purchase</p>
+              <p class="font-medium text-[#03071280]">use by January 2024</p>
+            </div>
+            <img class="" src="images/cupon-devider.png" alt="" />
+            <div class="font-raleway p-16">
+              <h3 class="text-[#030712] text-3xl font-bold">NEW15</h3>
+              <p class="font-medium text-[#03071280]">Coupon Code</p>
+            </div>
+          </div>
+          <div class="flex bg-[#F78C9C] w-1/2 rounded-3xl">
+            <div class="font-inter p-16">
+              <h3 class="font-black text-4xl text-[#030712cc]">20% OFF</h3>
+              <p class="font-semibold text-xl text-[#030712cc]">on your next purchase</p>
+              <p class="font-medium text-[#03071280]">use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="font-raleway p-16">
+              <h3 class="text-[#030712] text-3xl font-bold">Couple 20</h3>
+              <p class="font-medium text-[#03071280]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-6">
+          <button class="btn text-[#1DD100] border-[#1DD100] text-xl font-bold">See All Offers</button>
+        </div>
+      </section>
     </header>
-    <main>
-
-    </main>
+    <main></main>
     <footer>
-
+      
     </footer>
 
     <script src="scripts/scripts.js"></script>
