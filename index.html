@@ -17,7 +17,7 @@
       <nav class="font-raleway navbar bg-base-100 flex justify-between">
         <div>
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -43,7 +43,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+          <a class="btn text-4xl font-extrabold">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg font-medium">
@@ -79,9 +79,6 @@
             <a href="/#buy-ticket" class="btn bg-[#1DD100] text-xl border-none">
               Buy Tickets
             </a>
-          <!-- <button class="btn bg-[#1DD100] text-xl border-none">
-            Buy Tickets
-          </button> -->
         </div>
 
         <div
@@ -180,7 +177,7 @@
               <div class="pt-4 font-raleway">
                 <button class="btn bg-[#1dd10026]">
                   <img src="images/seat-green.png" alt="" />
-                  <p class="text-lg font-medium text-[#1DD100]">8 Seats left</p>
+                  <p class="ticketLeft text-lg font-medium text-[#1DD100]">8 Seats left</p>
                 </button>
               </div>
             </div>
@@ -200,9 +197,9 @@
               </div>
               <hr />
               <div class="flex justify-between p-4 font- font-semibold text-lg">
-                <button class="btn">Boarding Point - Laxmipur</button>
+                <button class="btn ">Boarding Point - Laxmipur</button>
                 <button class="btn">Dropping Point - Bogura</button>
-                <button class="btn">Est. Time - 11 Hour</button>
+                <button class="btn ">Est. Time - 11 Hour</button>
               </div>
             </div>
           </div>
@@ -257,22 +254,22 @@
             </div>
             <div class="flex justify-between p-1">
               <div>
-                <button class="btn">A1</button>
-                <button class="btn">A2</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">A1</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">A2</button>
               </div>
               <div>
-                <button class="btn">A3</button>
-                <button class="btn">A4</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">A3</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">A4</button>
               </div>
             </div>
             <div class="flex justify-between p-1">
               <div>
-                <button class="btn">B1</button>
-                <button class="btn">B2</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">B1</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">B2</button>
               </div>
               <div>
-                <button class="btn">B3</button>
-                <button class="btn">B4</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">B3</button>
+                <button class="h-10 w-10 rounded-lg bg-gray-200  carSeat">B4</button>
               </div>
             </div>
           </div>
@@ -282,23 +279,32 @@
               Select Your Seat
             </h2>
             <hr class="pb-4" />
-            <div class="bg-[#F7F8F8] font-inter">
-              <div class="flex justify-between font-medium text-base text-[#030712]">
-                <p>Seat <span class="text-[#1DD100]">2</span></p>
-                <p>class</p>
-                <p>Price</p>
+            <div class="bg-[#F7F8F8] font-inter p-4 rounded-2xl">
+              <div class="font-medium text-base text-[#030712]">
+                <div class="flex justify-between">
+                  <p>Seat<span class="seatCount inline-block w-[20px] h-[20px] text-white bg-[#1DD100]"></span></p>
+                  <p>Class</p>
+                  <p>Price</p>
+                 </div>
+                <ul class="seatList flex flex-col gap-2">
+                  
+                </ul>  
+              </div>
+              <div
+                class="flex justify-between font-medium text-base text-[#030712] mb-4"
+              >
+              <p>Total Price</p>
+                <p class="totalPrice" >BDT 0</p>
+              </div>
+              <div class="w-full relative mb-4 rounded-2xl">
+                <input class="couponInput h-14 w-full pr-24 pl-4 " type="text" placeholder="Have any copupon?">
+                <button class="couponApplyBtn h-10 w-20 btn absolute right-2 top-[50%] translate-y-[-50%] ">Apply</button>
               </div>
               <div
                 class="flex justify-between font-medium text-base text-[#030712]"
               >
-                <p>Total Price</p>
-                <p>BDT</p>
-              </div>
-              <div
-                class="flex justify-between font-medium text-base text-[#030712]"
-              >
-                <p>Grand Total</p>
-                <p>BDT</p>
+              <p>Grant Total</p>
+                <p class="grandTotal">BDT 0</p>
               </div>
             </div>
             <div class="p-2 font-inter text-[#030712]">
@@ -309,7 +315,6 @@
                   name=""
                   id=""
                   placeholder="Enter Your Name"
-                  required
                 />
               </label>
               <p class="font-semibold text-base">Phone Number*</p>
@@ -319,7 +324,6 @@
                   name=""
                   id=""
                   placeholder="Enter Your Phone Number"
-                  required
                 />
               </label>
               <p class="font-semibold text-base">Email ID</p>
@@ -343,7 +347,20 @@
             </div>
           </div>
         </section>
+        <br><br>
+        <section class="text-center gap-2 bg-[#F7F8F8]">
+          <div class=" flex justify-center flex-col items-center bg-white w-[80%] p-6 gap-2">
+            <img class="h-[100px] w-[100px]" src="images/success.png" alt="">
+            <h2 class="text-[#27AE60] font-bold text-3xl">SUCCESS</h2>
+            <p class="font-medium text-xl text-[#4A4A4A]">Thank you for Booking Our Bus Seats. 
+              We are working hard to find the best service and deals for you. 
+              </p>
+              <p>Shortly you will find a confirmation in your email.</p>
+              <button class="btn rounded-3xl bg-[#27AE60] text-white font-semibold text-xl w-[300px]">Continue</button>
+          </div>
+        </section>
       </section>
+      
     </main>
     <footer class="bg-[#030712] pt-8">
       <div class="flex justify-around pb-4">
