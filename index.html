@@ -60,30 +60,33 @@
           </button>
         </div>
       </nav>
-      <section>
-        <div class="relative">
-          <img class="w-[100%]" src="images/banner.png" alt="" />
-          <div class="absolute top-32 left-[349px] text-center">
-            <p class="lg:text-6xl text-4xl font-extrabold text-white">
-              End-to-End-Travel with
-            </p>
-            <p
-              class="lg:text-6xl text-4xl font-extrabold text-[#1DD100] pt-8 pb-5"
-            >
-              P Paribahan
-            </p>
-            <p class="pt-2 text-white pb-16">
-              Yes, you can run unit tests and view the results directly within
-              the app. The integrated testing features allow for a streamlined .
-            </p>
-            <button class="btn bg-[#1DD100] text-xl border-none">
+      <section class="relative mb-20">
+        <img class="w-[100%]" src="images/banner.png" alt="" />
+        <div class="absolute top-32 left-[50%] translate-x-[-50%] text-center">
+          <p class="lg:text-6xl text-4xl font-extrabold text-white">
+            End-to-End-Travel with
+          </p>
+          <p
+            class="lg:text-6xl text-4xl font-extrabold text-[#1DD100] pt-8 pb-5"
+          >
+            P Paribahan
+          </p>
+          <p class="pt-2 text-white pb-16">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          
+            <a href="/#buy-ticket" class="btn bg-[#1DD100] text-xl border-none">
               Buy Tickets
-            </button>
-          </div>
+            </a>
+          <!-- <button class="btn bg-[#1DD100] text-xl border-none">
+            Buy Tickets
+          </button> -->
         </div>
-      </section>
-      <section>
-        <div class="flex justify-around space-x-5 text-center font-inter">
+
+        <div
+          class="flex justify-between w-[80%] font-inter absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]"
+        >
           <button class="btn border-b-[#1DD100] h-[80px] rounded-3xl">
             <img src="images/people.png" alt="" />
             <div class="flex-row">
@@ -107,6 +110,7 @@
           </button>
         </div>
       </section>
+
       <section>
         <h1 class="font-raleway font-bold text-4xl p-4 text-center">
           Best offers for you
@@ -149,7 +153,7 @@
       </section>
     </header>
     <main>
-      <section  class="border-t-[#1DD100] rounded-3xl bg-[#F7F8F8]">
+      <section class="flex flex-col items-center border-t-[#1DD100] rounded-3xl bg-[#F7F8F8]">
         <h1 class="font-bold text-4xl text-[#030712] pb-6 text-center pt-4">
           P.H Paribahan
         </h1>
@@ -159,10 +163,10 @@
           Yes, you can run unit tests and view the results directly within the
           app. The integrated testing features allow for a streamlined .
         </p>
-        <section class="flex bg-white pb-4 rounded-3xl border-x-[80px]">
-          <div class="w-[70%] p-4">
+        <section class="flex items-center bg-white p-10 rounded-3xl w-[80%]">
+          <div class="w-[70%]">
             <div class="flex justify-between">
-              <div class="flex gap-4 pt-4">
+              <div class="flex gap-4 pt-4 mb-4">
                 <img src="images/bus-logo.png" alt="" />
                 <div class="font-raleway">
                   <h2 class="font-raleway text-3xl font-bold text-[#030712]">
@@ -180,13 +184,17 @@
                 </button>
               </div>
             </div>
-            <div class="bg-[#F7F8F8] rounded-2xl p-6 font-raleway font-semibold text-lg">
+            <div
+              class="bg-[#F7F8F8] rounded-2xl p-6 font-raleway font-semibold text-lg"
+            >
               <div class="flex justify-between p-4">
                 <p class="text-[#03071299]">Route</p>
                 <p class="text-[#030712]">Dhaka - Sylhet</p>
               </div>
               <hr />
-              <div class="flex justify-between p-4 font-raleway font-semibold text-lg">
+              <div
+                class="flex justify-between p-4 font-raleway font-semibold text-lg"
+              >
                 <p class="text-[#03071299]">Departure Time</p>
                 <p class="text-[#030712]">9:00 PM</p>
               </div>
@@ -199,21 +207,25 @@
             </div>
           </div>
           <img src="images/info-devider.png" alt="" />
-          <div class="font-raleway">
+          <div class="font-raleway ">
             <img src="images/fare.png" alt="" />
             <h3 class="font-bold text-3xl text-[#030712]">550 Taka</h3>
             <p class="font-semibold text-2xl text-[#03071299]">Per Seat</p>
           </div>
         </section>
-        <br><br>
-        <section class="flex bg-white rounded-3xl border-x-[80px]">
+        <br /><br />
+        <section id="buy-ticket" class="flex bg-white rounded-3xl w-[80%]">
           <div class="w-[50%] p-4">
-            <h2 class="pb-4 font-raleway font-semibold text-2xl">Select Your Seat</h2>
+            <h2 class="pb-4 font-raleway font-semibold text-2xl">
+              Select Your Seat
+            </h2>
             <hr />
             <div class="flex justify-between p-4 font-inter">
               <div class="flex gap-4">
                 <img src="images/seat-gray.png" alt="" />
-                <p class="pt-2 text-[#03071280] text-lg font-medium">Available</p>
+                <p class="pt-2 text-[#03071280] text-lg font-medium">
+                  Available
+                </p>
               </div>
               <div class="flex justify-between p-4">
                 <img src="images/seat-green-filled.png" alt="" />
@@ -221,7 +233,7 @@
               </div>
             </div>
             <hr />
-            <button class="pt-4 text-right">
+            <div class="pt-4 flex flex-row-reverse">
               <svg
                 width="26.000000"
                 height="26.000000"
@@ -242,7 +254,7 @@
                   stroke-linecap="round"
                 />
               </svg>
-            </button>
+            </div>
             <div class="flex justify-between p-1">
               <div>
                 <button class="btn">A1</button>
@@ -264,40 +276,67 @@
               </div>
             </div>
           </div>
-          <img src="images/info-devider.png" alt="">
+          <img src="images/info-devider.png" alt="" />
           <div>
-            <h2 class="pb-4 font-raleway font-semibold text-2xl">Select Your Seat</h2>
-            <hr class="pb-4">
+            <h2 class="pb-4 font-raleway font-semibold text-2xl">
+              Select Your Seat
+            </h2>
+            <hr class="pb-4" />
             <div class="bg-[#F7F8F8] font-inter">
-              <div class="flex gap-8 font-medium text-base text-[#030712]">
+              <div class="flex justify-between font-medium text-base text-[#030712]">
                 <p>Seat <span>2</span></p>
                 <p>class</p>
                 <p>Price</p>
               </div>
-              <div class="flex justify-between font-medium text-base text-[#030712]">
+              <div
+                class="flex justify-between font-medium text-base text-[#030712]"
+              >
                 <p>Total Price</p>
                 <p>BDT</p>
               </div>
-              <div class="flex justify-between font-medium text-base text-[#030712]">
+              <div
+                class="flex justify-between font-medium text-base text-[#030712]"
+              >
                 <p>Grand Total</p>
                 <p>BDT</p>
               </div>
             </div>
             <div class="p-2 font-inter text-[#030712]">
               <p class="font-semibold text-base">Passenger Name*</p>
-            <label>
-              <input type="text" name="" id="" placeholder="Enter Your Name" required>
-            </label>
-            <p class="font-semibold text-base">Phone Number*</p>
-            <label>
-              <input type="number" name="" id="" placeholder="Enter Your Phone Number" required>
-            </label>
-            <p class="font-semibold text-base">Email ID</p>
-            <label>
-              <input type="email" name="" id="" placeholder="Enter Your email id">
-            </label>
+              <label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Name"
+                  required
+                />
+              </label>
+              <p class="font-semibold text-base">Phone Number*</p>
+              <label>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Phone Number"
+                  required
+                />
+              </label>
+              <p class="font-semibold text-base">Email ID</p>
+              <label>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter Your email id"
+                />
+              </label>
             </div>
-            <button class="bg-[#1DD100] w-[433px] h-[35px] rounded-2xl font-raleway font-extrabold text-xl text-white">Next</button>
+            <button
+              class="bg-[#1DD100] w-[433px] h-[35px] rounded-2xl font-raleway font-extrabold text-xl text-white"
+            >
+              Next
+            </button>
             <div class="flex justify-between font-inter text-[#03071299]">
               <u>Terms and Conditions</u>
               <u>Cancellation Policy</u>
